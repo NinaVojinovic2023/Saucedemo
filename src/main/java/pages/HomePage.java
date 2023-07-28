@@ -34,6 +34,7 @@ public class HomePage extends LoginPage {
         List<WebElement> button = driver.findElements(By.className("btn_small"));
         button.get(index).click();
     }
+
     public void clickRemoveButtonFromHPByIndex(int index){
         List<WebElement> button = driver.findElements(By.className("btn_small"));
         button.get(index).click();
@@ -41,6 +42,7 @@ public class HomePage extends LoginPage {
     public String getBadgeCartNumber(){
         return driver.findElement(cartButtonBadge).getText();
     }
+
 
 
 

@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e9390d9-a67d-43f6-bbc8-8825a2951998" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CompletePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/OverviewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginTests/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ProductsTests/ProductsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/DataUtil.java" afterDir="false" />
+    <list default="true" id="4e9390d9-a67d-43f6-bbc8-8825a2951998" name="Changes" comment="Proba projekta//&#10;Base tests i LoginTests.java / corrections">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/AddingProductsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/FinishShoppingTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginDataProviderTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RemoveProductsFromProductPageTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/RemoveProductsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/TotalPriceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginTests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductsTests/ProductsTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +49,50 @@
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="LoginTests.lockedUserLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Saucedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.LoginTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LoginTests.LoginTests" />
+      <option name="METHOD_NAME" value="lockedUserLoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.problemUserLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Saucedemo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.LoginTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests.LoginTests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.LoginTests.LoginTests" />
+      <option name="METHOD_NAME" value="problemUserLoginTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginTests.lockedUserLoginTest" />
+        <item itemvalue="TestNG.LoginTests.problemUserLoginTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,6 +102,28 @@
       <option name="presentableId" value="Default" />
       <updated>1690321354199</updated>
     </task>
+    <task id="LOCAL-00001" summary="Proba projekta//&#10;Base tests i LoginTests.java">
+      <option name="closed" value="true" />
+      <created>1690527542388</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690527542388</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Proba projekta//&#10;Base tests i LoginTests.java / corrections">
+      <option name="closed" value="true" />
+      <created>1690527745946</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690527745946</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Proba projekta//&#10;Base tests i LoginTests.java" />
+    <MESSAGE value="Proba projekta//&#10;Base tests i LoginTests.java / corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proba projekta//&#10;Base tests i LoginTests.java / corrections" />
   </component>
 </project>

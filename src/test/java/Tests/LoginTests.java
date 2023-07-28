@@ -1,4 +1,4 @@
-package LoginTests;
+package Tests;
 
 import Base.BaseTest;
 import org.openqa.selenium.WebDriver;

@@ -24,4 +24,3 @@ public class ProductsTests extends BaseTest {
             }
     }
 
-}

@@ -1,11 +1,9 @@
 package Tests;
 
 import Base.BaseTest;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
-import pages.LoginPage;
 
 public class LoginTests extends BaseTest {
 

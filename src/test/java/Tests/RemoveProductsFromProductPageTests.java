@@ -29,8 +29,6 @@ public class RemoveProductsFromProductPageTests {
             HomePage homePage = loginPage.clickLoginButton();
             ProductPage productPage = homePage.clickProductName("Sauce Labs Backpack");
             Assert.assertEquals(productPage.getProductName(), "Sauce Labs Backpack", "Not true product name");
-            ProductPage productPage = homePage.clickProductName("Sauce Labs Backpack");
-            Assert.assertEquals(productPage.getProductName(), "Sauce Labs Backpack", "Not true product name");
             productPage.clickAddToCart();
             homePage = productPage.clickBackToProducts();
             productPage = homePage.clickProductName("Sauce Labs Bike Light");
@@ -59,7 +57,7 @@ public class RemoveProductsFromProductPageTests {
             cartPage.clickRemoveByIndex(3);
             cartPage.clickRemoveByIndex(4);
             cartPage.clickRemoveByIndex(5);
-            Assert.assertEquals(cartPage.countItems(), 0, "Not true number of items");
+            Assert.assertEquals(cartPage.countItems(), 0, "Invalid number of items");
         }
     }
 }

@@ -4,24 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e9390d9-a67d-43f6-bbc8-8825a2951998" name="Changes" comment="Proba projekta//&#10;Base tests i LoginTests.java / corrections">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Tests/AddingToCartTestsPP.java" afterDir="false" />
+    <list default="true" id="4e9390d9-a67d-43f6-bbc8-8825a2951998" name="Changes" comment="Proba projekta//&#10;Sve crveno!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CompletePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CompletePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/OverviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/OverviewPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddingProductsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddingToCartTestsHP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/FinishShoppingTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/FinishShoppingTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddingToCartTestsHP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddingToCartTestsHP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/AddingToCartTestsPP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/AddingToCartTestsPP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginDataProviderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginDataProviderTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RemoveProductsFromProductPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RemoveProductsFromProductPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Tests/RemoveProductsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/RemoveProductsTestsHP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/TotalPriceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/TotalPriceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/DataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/DataUtil.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,21 +40,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/W10NB2/IdeaProjects/Zadatak1/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests.lockedUserLoginTest">
+  <component name="RunManager">
     <configuration name="LoginTests.lockedUserLoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Saucedemo" />
       <extension name="coverage">
@@ -130,7 +124,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690527745946</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Proba projekta//&#10;Sve crveno!">
+      <option name="closed" value="true" />
+      <created>1690719831386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690719831386</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Proba projekta//&#10;Sve crveno!">
+      <option name="closed" value="true" />
+      <created>1690720007714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690720007714</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,6 +157,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Proba projekta//&#10;Base tests i LoginTests.java" />
     <MESSAGE value="Proba projekta//&#10;Base tests i LoginTests.java / corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="Proba projekta//&#10;Base tests i LoginTests.java / corrections" />
+    <MESSAGE value="Proba projekta//&#10;Sve crveno!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proba projekta//&#10;Sve crveno!" />
   </component>
 </project>

@@ -26,7 +26,7 @@ public class TotalPriceTests extends BaseTest {
             checkoutPage.setLastName("Vojinovic");
             checkoutPage.setPostCode("11000");
             OverviewPage overviewPage = checkoutPage.clickContinueButton();
-            Assert.assertEquals(OverviewPage.getItemTotal(), "Item total: $29.99", "Not expected price");
+            Assert.assertEquals(overviewPage.getItemTotal(), "Item total: $29.99", "Not expected price");
 
         }
     }

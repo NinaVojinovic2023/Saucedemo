@@ -10,8 +10,8 @@ import pages.ProductPage;
 public class AddingToCartTestsPP extends BaseTest {
         @Test
         public void addOneItemTest() {
-            loginPage.setUsername("standard_user");
-            loginPage.setPassword("secret_sauce");
+            loginPage.setUsernameField("standard_user");
+            loginPage.setPasswordField("secret_sauce");
             HomePage homePage = loginPage.clickLoginButton();
             ProductPage productPage = homePage.clickProductName("Sauce Labs Backpack");
             Assert.assertEquals(productPage.getProductName(), "Sauce Labs Backpack", "Not true product name");
@@ -21,8 +21,8 @@ public class AddingToCartTestsPP extends BaseTest {
         }
         @Test
         public void addAllItemsTest() {
-            loginPage.setUsername("standard_user");
-            loginPage.setPassword("secret_sauce");
+            loginPage.setUsernameField("standard_user");
+            loginPage.setPasswordField("secret_sauce");
             HomePage homePage = loginPage.clickLoginButton();
             ProductPage productPage = homePage.clickProductName("Sauce Labs Backpack");
             Assert.assertEquals(productPage.getProductName(), "Sauce Labs Backpack", "Not true product name");

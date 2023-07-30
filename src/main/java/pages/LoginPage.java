@@ -10,9 +10,6 @@ public class LoginPage {
     private By loginButton = By.id("login-button");
     private By errorButton = By.cssSelector("#login_button_container > div > form > div.error-message-container.error > h3");
 
-//    public LoginPage(WebDriver driver){
-//        this.driver = driver;
-//    }
 
     public LoginPage(WebDriver driver) {
         this.driver=driver;

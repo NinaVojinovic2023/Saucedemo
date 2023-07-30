@@ -14,7 +14,7 @@ public class OverviewPage {
     }
 
 
-    private String getItemTotal(){
+    public String getItemTotal(){
         return driver.findElement(totalItems).getText();
 
     }

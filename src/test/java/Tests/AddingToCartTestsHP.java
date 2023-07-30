@@ -33,4 +33,6 @@ public class AddingToCartTestsHP extends BaseTest {
         CartPage cartPage = homePage.clickCart();
         Assert.assertEquals(cartPage.countItems(), 6, "Not expected number of items");
     }
-}
+
+    }
+

@@ -32,7 +32,7 @@ public class LoginDataProviderTests extends BaseTest {
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
         loginPage.clickLoginButton();
-        HomePage homePage1 = loginPage.clickLoginButton();
+        HomePage homePage = loginPage.clickLoginButton();
         Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
     }
 
@@ -41,7 +41,7 @@ public class LoginDataProviderTests extends BaseTest {
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
         loginPage.clickLoginButton();
-        HomePage homePage1 = loginPage.clickLoginButton();
+        HomePage homePage = loginPage.clickLoginButton();
         Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
     }
 

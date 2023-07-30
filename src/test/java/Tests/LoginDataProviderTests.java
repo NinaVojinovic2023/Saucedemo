@@ -14,7 +14,7 @@ public class LoginDataProviderTests extends BaseTest {
     public void standardUserLoginTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
-        HomePage homePage1 = loginPage.clickLoginButton();
+        HomePage homePage = loginPage.clickLoginButton();
         Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
     }
 

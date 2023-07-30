@@ -3,14 +3,13 @@ package Tests;
 import Base.BaseTest;
 import Utils.DataUtil;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import pages.HomePage;
 import org.testng.annotations.Test;
+import pages.HomePage;
 
 import java.util.HashMap;
 
 public class LoginDataProviderTests extends BaseTest {
-    @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider")
+    @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider1")
     public void standardUserLoginTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
@@ -22,8 +21,7 @@ public class LoginDataProviderTests extends BaseTest {
     public void problemUserLoginTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
-        loginPage.clickLoginButton();
-        HomePage homePage1 = loginPage.clickLoginButton();
+        HomePage homePage = loginPage.clickLoginButton();
         Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
     }
 
@@ -32,15 +30,13 @@ public class LoginDataProviderTests extends BaseTest {
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
         loginPage.clickLoginButton();
-        HomePage homePage = loginPage.clickLoginButton();
-        Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
+        Assert.assertEquals(loginPage.getErrorAlert(), "Epic sadface: Sorry, this user has been locked out.", "Not expected");
     }
 
     @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider4")
     public void performanceGlitchUserLoginTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
-        loginPage.clickLoginButton();
         HomePage homePage = loginPage.clickLoginButton();
         Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
     }
@@ -50,7 +46,7 @@ public class LoginDataProviderTests extends BaseTest {
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
         loginPage.clickLoginButton();
-        Assert.assertEquals(loginPage.getErrorAlert(), "Epic sadface: Username and password do not match any user in this servic" , "Not expected");
+        Assert.assertEquals(loginPage.getErrorAlert(), "Epic sadface: Username and password do not match any user in this service" , "Not expected");
     }
 
     @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider6")

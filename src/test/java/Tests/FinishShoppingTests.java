@@ -22,7 +22,7 @@ public class FinishShoppingTests {
             CheckoutPage checkoutPage = cartPage.clickCheckoutButton();
             checkoutPage.setFirstName(hashMap.get("firstName"));
             checkoutPage.setLastName(hashMap.get("lastName"));
-            checkoutPage.setPostCode(hashMap.get("postalCode"));
+            checkoutPage.setPostCode(hashMap.get("postCode"));
             OverviewPage overviewPage = checkoutPage.clickContinueButton();
             Assert.assertEquals(overviewPage.getItemTotal(), "Item total: $29.99", "Not expected price");
             CompletePage completeCheckoutPage = overviewPage.clickFinish();

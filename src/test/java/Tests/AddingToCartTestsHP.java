@@ -9,7 +9,7 @@ import pages.HomePage;
 
 import java.util.HashMap;
 
-public class AddingProductsTests extends BaseTest {
+public class AddingToCartTestsHP extends BaseTest {
     @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider")
     public void addOneItemTest(HashMap<String, String> hashMap) {
         loginPage.setUsernameField(hashMap.get("username"));
@@ -20,7 +20,7 @@ public class AddingProductsTests extends BaseTest {
         Assert.assertEquals(cartPage.countItems(), 1, "Not true number of items");
     }
     @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider")
-    public void addSixItemsTest(HashMap<String, String> hashMap) {
+    public void addAllItemsTest(HashMap<String, String> hashMap) {
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
         HomePage homePage = loginPage.clickLoginButton();

@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class CartPage extends CheckoutPage {
+public class CartPage {
 
     private WebDriver driver;
 
@@ -18,8 +18,6 @@ public class CartPage extends CheckoutPage {
             this.driver = driver;
         }
 
-    public CartPage() {
-    }
 
     public int countItems(){
             return driver.findElements(remove).size();

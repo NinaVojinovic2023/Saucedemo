@@ -7,28 +7,23 @@ import pages.CartPage;
 import pages.HomePage;
 import pages.ProductPage;
 
-public class RemoveProductsFromProductPageTests {
-
-    public class RemoveProductsAddedFromProductPageTests extends BaseTest {
+public class AddingToCartTestsPP extends BaseTest {
         @Test
-        public void removeItemTest(){
-            loginPage.setUsernameField("standard_user");
-            loginPage.setPasswordField("secret_sauce");
+        public void addOneItemTest() {
+            loginPage.setUsername("standard_user");
+            loginPage.setPassword("secret_sauce");
             HomePage homePage = loginPage.clickLoginButton();
             ProductPage productPage = homePage.clickProductName("Sauce Labs Backpack");
             Assert.assertEquals(productPage.getProductName(), "Sauce Labs Backpack", "Not true product name");
             productPage.clickAddToCart();
             CartPage cartPage = productPage.clickCart();
-            cartPage.clickRemoveByIndex(0);
-            Assert.assertEquals(cartPage.countItems(), 0, "Not expected number of items");
+            Assert.assertEquals(cartPage.countItems(), 1, "Not true number of items");
         }
         @Test
-        public void removeAllItemsTest() {
-            loginPage.setUsernameField("standard_user");
-            loginPage.setPasswordField("secret_sauce");
+        public void addAllItemsTest() {
+            loginPage.setUsername("standard_user");
+            loginPage.setPassword("secret_sauce");
             HomePage homePage = loginPage.clickLoginButton();
-            ProductPage productPage = homePage.clickProductName("Sauce Labs Backpack");
-            Assert.assertEquals(productPage.getProductName(), "Sauce Labs Backpack", "Not true product name");
             ProductPage productPage = homePage.clickProductName("Sauce Labs Backpack");
             Assert.assertEquals(productPage.getProductName(), "Sauce Labs Backpack", "Not true product name");
             productPage.clickAddToCart();
@@ -53,13 +48,7 @@ public class RemoveProductsFromProductPageTests {
             Assert.assertEquals(productPage.getProductName(), "Test.allTheThings() T-Shirt (Red)", "Not true product name");
             productPage.clickAddToCart();
             CartPage cartPage = productPage.clickCart();
-            cartPage.clickRemoveByIndex(0);
-            cartPage.clickRemoveByIndex(1);
-            cartPage.clickRemoveByIndex(2);
-            cartPage.clickRemoveByIndex(3);
-            cartPage.clickRemoveByIndex(4);
-            cartPage.clickRemoveByIndex(5);
-            Assert.assertEquals(cartPage.countItems(), 0, "Not true number of items");
+            Assert.assertEquals(cartPage.countItems(), 6, "Not true number of items");
         }
-    }
+
 }

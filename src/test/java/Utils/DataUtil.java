@@ -13,45 +13,45 @@ public class DataUtil extends BaseTest {
 
     @DataProvider
     public static Object [][] dataProvider1() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data1");
+        return readYaml("src/main/resources/data.yaml" , "data1");
     }
 
     @DataProvider
     public static Object [][] dataProvider2() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data2");
+        return readYaml("src/main/resources/data.yaml", "data2");
     }
 
     @DataProvider
     public static Object [][] dataProvider3() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data3");
+        return readYaml("src/main/resources/data.yaml", "data3");
     }
 
     @DataProvider
     public static Object [][] dataProvider4() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data4");
+        return readYaml("src/main/resources/data.yaml", "data4");
     }
 
     @DataProvider
     public static Object [][] dataProvider5() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data5");
+        return readYaml("src/main/resources/data.yaml", "data5");
     }
 
     @DataProvider
     public static Object [][] dataProvider6() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data6");
+        return readYaml("src/main/resources/data.yaml", "data6");
     }
     @DataProvider
     public static Object [][] dataProvider7() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data7");
+        return readYaml("src/main/resources/data.yaml", "data7");
     }
     @DataProvider
     public static Object [][] dataProvider8() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data8");
+        return readYaml("src/main/resources/data.yaml", "data8");
     }
 
     @DataProvider
     public static Object [][] dataProvider9() {
-        return readYaml("C:\\Users\\W10NB2\\IdeaProjects\\UniSoft\\Saucedemo\\src\\main\\resources\\data.yaml", "data9");
+        return readYaml("src/main/resources/data.yaml", "data9");
     }
 
     private static Object [][] readYaml(String filePath, String yamlObject) {

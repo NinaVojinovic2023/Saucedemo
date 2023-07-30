@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
-public class HomePage extends LoginPage {
+public class HomePage {
     private WebDriver driver;
     private By titleCategory = By.className("title");
     private By cartButton = By.className("shopping_cart_link");

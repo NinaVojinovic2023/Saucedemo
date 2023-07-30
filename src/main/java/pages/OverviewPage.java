@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class OverviewPage extends CompletePage {
+public class OverviewPage {
     private WebDriver driver;
 
     private By totalItems = By.className("summary_subtotal_label");
@@ -13,8 +13,6 @@ public class OverviewPage extends CompletePage {
         this.driver = driver;
     }
 
-    public OverviewPage() {
-    }
 
     private String getItemTotal(){
         return driver.findElement(totalItems).getText();

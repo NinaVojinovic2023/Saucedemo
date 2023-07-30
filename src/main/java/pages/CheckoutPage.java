@@ -3,7 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class CheckoutPage extends OverviewPage {
+public class CheckoutPage {
         private WebDriver driver;
         private By firstNameField = By.id("first-name");
         private By lastNameField = By.id("last-name");
@@ -15,8 +15,6 @@ public class CheckoutPage extends OverviewPage {
             this.driver = driver;
         }
 
-        public CheckoutPage() {
-        }
 
         public void setFirstName(String firstName){
 

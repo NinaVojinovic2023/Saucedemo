@@ -22,6 +22,7 @@ public class LoginDataProviderTests extends BaseTest {
     public void problemUserLoginTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
+        loginPage.clickLoginButton();
         HomePage homePage1 = loginPage.clickLoginButton();
         Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
     }
@@ -30,6 +31,7 @@ public class LoginDataProviderTests extends BaseTest {
     public void lockedUserLoginTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
+        loginPage.clickLoginButton();
         HomePage homePage1 = loginPage.clickLoginButton();
         Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
     }
@@ -38,6 +40,7 @@ public class LoginDataProviderTests extends BaseTest {
     public void performanceGlitchUserLoginTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
+        loginPage.clickLoginButton();
         HomePage homePage1 = loginPage.clickLoginButton();
         Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
     }
@@ -46,40 +49,48 @@ public class LoginDataProviderTests extends BaseTest {
     public void loginWithWrongUsernameTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
-        HomePage homePage1 = loginPage.clickLoginButton();
-        Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
+        loginPage.clickLoginButton();
+        Assert.assertEquals(loginPage.getErrorAlert(), "Epic sadface: Username and password do not match any user in this servic" , "Not expected");
     }
 
     @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider6")
     public void LoginWithWrongPasswordTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
-        HomePage homePage1 = loginPage.clickLoginButton();
-        Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
+        loginPage.clickLoginButton();
+        Assert.assertEquals(loginPage.getErrorAlert(),
+                "Epic sadface: Username and password do not match any user in this service",
+                "User is login successfully");
     }
 
     @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider7")
     public void loginJustWithUsernameTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
-        HomePage homePage1 = loginPage.clickLoginButton();
-        Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
+        loginPage.clickLoginButton();
+        Assert.assertEquals(loginPage.getErrorAlert(),
+                "Epic sadface: Password is required",
+                "User is login successfully");
     }
 
     @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider8")
     public void loginWhithoutUsernameTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
-        HomePage homePage1 = loginPage.clickLoginButton();
-        Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
+        loginPage.clickLoginButton();
+        Assert.assertEquals(loginPage.getErrorAlert(),
+                "Epic sadface: Username is required",
+                "User is login successfully");
     }
 
     @Test(dataProviderClass = DataUtil.class, dataProvider = "dataProvider9")
     public void loginWithoutCredintialsTest(HashMap<String, String>hashMap){
         loginPage.setUsernameField(hashMap.get("username"));
         loginPage.setPasswordField(hashMap.get("password"));
-        HomePage homePage1 = loginPage.clickLoginButton();
-        Assert.assertEquals(homePage.getTitle(), "Products", "Not expected");
+        loginPage.clickLoginButton();
+        Assert.assertEquals(loginPage.getErrorAlert(),
+                "Epic sadface: Username is required",
+                "User is login successfully");
     }
 
 

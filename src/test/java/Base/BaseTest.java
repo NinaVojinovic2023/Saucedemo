@@ -9,9 +9,9 @@ import pages.HomePage;
 import pages.LoginPage;
 
 public class BaseTest {
-    private WebDriver driver;
+    protected WebDriver driver;
     protected HomePage homePage;
-    protected LoginPage loginPage;
+    public LoginPage loginPage;
 
 
     @BeforeClass
@@ -26,7 +26,7 @@ public class BaseTest {
     @BeforeMethod
     public void backToLoginPage() {
         driver.get("https://www.saucedemo.com/");
-        LoginPage loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(driver);
         }
 
         @AfterClass
